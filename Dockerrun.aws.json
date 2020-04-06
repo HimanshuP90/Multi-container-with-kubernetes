@@ -1,0 +1,38 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "nginx",
+      "image": "dockerid90/multi-nginx",
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "links": ["frontend", "backend"],
+      "essential": true
+    },
+    {
+      "name": "frontend",
+      "image": "dockerid90/multi-client",
+      "hostname": "frontend",
+      "memory": 128,
+      "essential": false
+    },
+    {
+      "name": "worker",
+      "image": "dockerid90/multi-worker",
+      "memory": 128,
+      "essential": false
+    },
+    {
+      "name": "backend",
+      "image": "dockerid90/multi-server",
+      "hostname": "backend",
+      "memory": 128,
+      "essential": false
+    }
+  ]
+}
