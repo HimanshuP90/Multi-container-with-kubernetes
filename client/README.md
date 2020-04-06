@@ -1347,13 +1347,13 @@ When you encounter bugs caused by changing components, you will gain a deeper in
 If you’d like to test components in isolation from the child components they render, we recommend using [`shallow()` rendering API](http://airbnb.io/enzyme/docs/api/shallow.html) from [Enzyme](http://airbnb.io/enzyme/). To install it, run:
 
 ```sh
-npm install --save enzyme enzyme-adapter-react-16 react-test-renderer
+npm install --save enzyme enzyme-adapter-react-16 Multi-container-with-kubernetes-renderer
 ```
 
 Alternatively you may use `yarn`:
 
 ```sh
-yarn add enzyme enzyme-adapter-react-16 react-test-renderer
+yarn add enzyme enzyme-adapter-react-16 Multi-container-with-kubernetes-renderer
 ```
 
 As of Enzyme 3, you will need to install Enzyme along with an Adapter corresponding to the version of React you are using. (The examples above use the adapter for React 16.)
