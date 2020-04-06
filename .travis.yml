@@ -22,7 +22,7 @@ before_install:
   # - gcloud config set compute/zone us-central1-a
   # - gcloud container clusters get-credentials k2cluster
   # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker pull dockerid90/Multi-container-with-kubernetes:latest
+  # - docker pull dockerid90/Multi-container-with-kubernetes:latest
   - docker build -t dockerid90/Multi-container-with-kubernetes -f ./client/Dockerfile.dev ./client
   - docker push dockerid90/Multi-container-with-kubernetes:latest
 
